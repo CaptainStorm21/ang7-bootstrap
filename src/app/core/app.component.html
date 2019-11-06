@@ -1,0 +1,40 @@
+<div class="site">
+  <div class="site-content">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <a
+        class="nav-item nav-link"
+        [routerLink]="['/home']"
+        routerLinkActive="active"
+        ><i class="fa fa-home mx-1"></i>Home</a
+      ><a
+        class="nav-item nav-link"
+        [routerLink]="['/portfolio']"
+        routerLinkActive="active"
+        ><i class="fa fa-image mx-1"></i>Portfolio</a
+      ><a
+        class="nav-item nav-link"
+        [routerLink]="['/contact']"
+        routerLinkActive="active"
+        ><i class="fa fa-at  mx-1"></i>Contact</a
+      >
+    </nav>
+    <div class="header">
+      <h2>This is our</h2>
+      <h1>Angular Develpment</h1>
+    </div>
+    <section class="site">
+      <router-outlet></router-outlet>
+    </section>
+
+    <footer class="footer static-bottom col-12">
+      <div class="col-12 text-center">
+        <p>Copyright @ 2019 Angular Dev Team</p>
+        <ul class="social-icons">
+          <li class="pl-2"><a class="fa fa-twitter "></a></li>
+          <li class="pl-2"><a class="fa fa-facebook"></a></li>
+          <li class="pl-2"><a class="fa fa-instagram"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</div>
